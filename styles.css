@@ -1,0 +1,255 @@
+
+@font-face {
+  font-family: 'Parker';
+  src: url('fonts/parker-webfont.woff') format('woff'),
+      url('fonts/parker-webfont.woff2') format('woff2'),
+      url('fonts/Parker.tff') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GalaxieCopernicus-Medium';
+  src: url('fonts/GalaxieCopernicus-Medium.eot') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GalaxieCopernicus-Medium';
+  src:  url('fonts/GalaxieCopernicus-Medium.otf')  format('opentype'),
+	     url('fonts/GalaxieCopernicus-Medium.woff') format('woff'), url('fonts/GalaxieCopernicus-Medium.ttf')  format('truetype'), url('fonts/GalaxieCopernicus-Medium.svg#GalaxieCopernicus-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'GalaxieCopernicus-Bold';
+  src: url('fonts/GalaxieCopernicus-Bold.eot') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GalaxieCopernicus-Bold';
+  src:  url('fonts/GalaxieCopernicus-Bold.otf')  format('opentype'),
+	     url('fonts/GalaxieCopernicus-Bold.woff') format('woff'), url('fonts/GalaxieCopernicus-Bold.ttf')  format('truetype'), url('fonts/GalaxieCopernicus-Bold.svg#GalaxieCopernicus-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', 'Helvetica neue', sans-serif;
+/*    background: #222222;*/
+    background-image: url(img/backgroundimg.png);
+    color: #ffffff;
+    font-weight: 300;     
+}
+
+a {
+    color: #ffffff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #222222;
+}
+
+
+h1 {
+    font-family:  arial black, arial, helvetica neue , 'Parker', 'GalaxieCopernicus-Medium', 'Slabo 27px', 'Volkhov', serif;
+    font-size: 4.5em; 
+    font-weight:00;
+}
+
+h2 {
+    font-family: helvetica neue, 'Parker', 'GalaxieCopernicus-Medium','Slabo 27px', 'Volkhov', serif;
+    font-size: 2em; 
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 1.5em; 
+    font-weight: 300;
+}
+
+input {
+    font-family: 'Open Sans', 'Helvetica neue', sans-serif;
+}
+
+option {
+    font-family: 'Open Sans', 'Helvetica neue', sans-serif;
+}
+
+header {
+/*
+    background: url(img/header.jpg) no-repeat;
+    background-size: cover;
+*/
+    
+    /*            makes it grow and crop*/
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    /*  centre horizontal using flexbox*/
+    align-items: center;
+    /*    centre verical using flexbox*/
+}
+
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+header h1 {
+    color: #ffffff;
+
+}
+
+#about {
+    align-content: center;
+    text-align: center;
+    padding: 150px 50px 150px 50px;
+}
+
+#about img {
+    padding: 100px 100px 100px 100px;
+    display: inline;
+}
+
+article {
+    padding: 0;
+    max-width: 450px;
+    margin-left: 60px;
+    display: inline-block;
+    text-align: left;
+    transform: translateY(-55px)
+}
+
+.row {
+    width: 400px;
+    padding: 10px;
+    border: none;
+    margin: 5px 0px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 17px;
+    color: #6f6d6d;
+    padding-top: 20px;
+    text-align: center;
+
+}
+
+input {
+    font-size: 17px;
+    padding: 5px 2px 5px;
+    border-radius: 
+}
+
+input[type=submit] {
+     -webkit-appearance: none;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.27);
+    padding: 10px 30px;
+    display:  block;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+input[type=submit]:hover {
+    background: rgba(255, 255, 255, 0.78);
+}
+
+textarea {
+    display: block;
+    width: 250px;
+    height: 120px;
+    font-size: 17px;
+}
+
+
+select {
+    width: 120px;
+    font-size: 17px;
+}
+
+#submit {
+    margin-top: 30px;  
+}
+
+#mailinglist {
+    align-content: center;
+    text-align: center;
+    padding-top: 100px;
+    max-width: 100%;
+}
+
+#email {
+    max-width: 100%;
+    width: 352px;
+}
+
+#postcode {
+    width: 80px;
+    margin-top: 5px;
+}
+
+#imgslider{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.parallax-window {
+    min-height: 800px;
+    background: transparent;
+}
+
+footer {
+    display: block;
+    padding: 20px 35px 50px 35px;
+    background: #0f0f0f
+}
+
+.social {
+ height: 40px;
+padding: 15px 0 15px 0;
+    cursor: pointer;
+}
+
+.social2 {
+     height: 40px;
+padding: 15px 0 15px 20px;
+    cursor: pointer;
+}
+
+.vid {
+    max-width: 500px;
+    display: inline-block;
+}
+
+/*
+video {
+    width: 100%;
+    max-height: 100%;
+}
+*/
+
+#video-background {
+/*  making the video fullscreen  */
+  position: fixed;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  z-index: -100;
+    text-align: center;
+}
